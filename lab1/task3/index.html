@@ -1,21 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Reem Shkeep">
-    <meta name="description" content="music player ">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js" defer ></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Reem Shkeep" />
+    <meta name="description" content="music player " />
+    <link rel="stylesheet" href="css/main.css" />
 
-    <title>My Music Player</title>
-</head>
-<body>
+    <title>Audio Player</title>
+  </head>
+  <body>
+    <!--header -->
+    <header>
+      <h1>Header</h1>
+    </header>
+    <!--navigation -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- section -->
+    <section>
+      <h2> My Audio Player </h2>
+      <!--article -->
 
+      <div class="container">
+        <!-- audio player -->
+        <div id="audio">
+            <audio id="myAudio" controls src="" type="audio/mpeg"  controlsList="nodownload" muted></audio>
+        </div>
+        <!-- audio buttons -->
+        <div class="buttons">
+            <button onclick="pauseAudio()" type="button">Pause Audio</button>
+            <button onclick="RandomPlay()" type="button">Play Randomly</button>
+            <button onclick="Playback()" type="button">Play Sequentialy</button>
+            <br>
+            <input type="file" class="custom-file-input">
+        </div>
+        <!-- play list -->
+        <ul id="MyList"></ul>
+    </div>
 
+    </section>
 
-    
-    
-</body>
+    <footer>
+      <p>Reem Shkeep</p>
+    </footer>
+  </body>
 </html>
