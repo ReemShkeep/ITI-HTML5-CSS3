@@ -1,0 +1,154 @@
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+* {
+
+    font-family: 'Raleway';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* header design */
+header {
+    background-color: #00b050;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+/*horizontal navigation bar design */
+
+nav ul {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d1e5e4;
+}
+
+nav li {
+    float: left;
+}
+/* make navbar links display center */
+
+
+
+nav li a {
+    float: left;
+    display: block;
+    color: #ffffff ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+nav li a:hover {
+    background-color: #d1e5e4;
+}
+
+nav li a:active {
+    background-color: #d1e5e4;
+}
+
+nav li a:visited {
+    background-color: #d1e5e4;
+}
+
+nav li a:link {
+    background-color: #d1e5e4;
+}
+
+nav li a:focus {
+    background-color: #d1e5e4;
+}
+
+
+/* section design */
+section {
+    background-color: #ff8b2d;
+    width: 100%;
+    float: left;
+    padding: 10px;
+    height: 42vh;
+}
+/*article design */
+article {
+    background-color: #ffd900;
+    height: 300px;
+    width: 80%;
+    margin-top: 2%;
+    float: left;
+    padding: 10px;
+}
+
+/* 
+img {
+    width: 100px;
+    height: 100px;
+} */
+figure div {
+    background-color: #31859c;
+    height: 15vh;
+    width: 68vw;
+    margin-top: 10%;
+    float: left;
+    padding: 10px;
+}
+figure div h2{
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+/* footer design */
+footer {
+    float: bottom;
+    background-color: #fb3d0d;
+    color: #fff;
+    clear: both;
+    text-align: center;
+    padding: 5px;
+}
+/*figure design */
+figure {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #;
+}
+/*figcaption design */
+figcaption {
+    text-align: center;
+}
+
+
+
+
+/* image in figure design */
+
+
+
+/* navigation bar fixed position 
+
+nav {
+    line-height: 30px;
+    background-color: #eeeeee;
+    height: 300px;
+    width: 100px;
+    float: left;
+    padding: 5px;
+}
+*/
+/*make fixed footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fb3d0d;
+    color: white;
+    text-align: center;
+}

@@ -1,35 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Reem Shkeep">
-    <meta name="description" content="music player ">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js" defer ></script>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="index.js" defer></script>
+      <link rel="stylesheet" href="css/main.css" />
+      <!-- <script src="js/main.js" defer></script> -->
+      <title>task2</title>
+    </head>
+    <body>
+      <div class="container">
+        <form method="get" action="">
+          <!-- oninput="result.value='welcome ya '+urName.value" -->
 
-    <title>Standrad form</title>
-</head>
-<body>
+          <label for="itiuname">username</label>
+          <input
+            type="text"
+            placeholder="username"
+            class="username"
+            id="itiuname"
+            required
+          /><br />
 
-    <form >
-        <label>Name:</label><br>
-        <input type="text" placeholder="Please Enter your Name" required="" ><br>
-        <label>Email:</label><br>
-        <input type="email" placeholder="Please Enter your Email" required=""><br>
-        <label>Password:</label><br>
-        <input type="password" required="" minlength="8"><br>
-        <label>Salary:</label><br>
-          <input oninput="x.value=parseInt(a.value)+150" type="range" id="a" value="100">
-          <output name="x" for="a">250</output><br>
-          <label>Age:</label><br>
-          <input type="number" required="" min="21"><br><br>
-        <button type="submit">Submit</button>
-      </form>
-      
+          <label for="">Email</label>
+          <input
+            type="email"
+            class="email"
+            name=""
+            id=""
+            placeholder="enter your password here please!"
+            required
+          />
+          <!-- <input type="email" class="email" name="" id="" placeholder="enter your password here please!"  required /> -->
+          <br />
+          <label for="">password</label>
+          <input
+            type="password"
+            class="password"
+            name=""
+            id=""
+            placeholder="enter your password here please!"
+            required
+          />
+          <br />
+          <label for="">Salary</label>
+          <input type="range" min="5" max="200" step="2" /><br />
 
-    
-    
-</body>
+          <label for="">Age</label>
+          <input type="text" name="Age" /><br />
+          <input type="submit" value=" Submit " />
+        </form>
+      </div>
+    </body>
+  </html>
 </html>
