@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+    *,
+    *:before,
+    *:after{
+        font-family: 'Raleway';        
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    html{
+        height: 100%;
+    background-image: linear-gradient(to left,#250325,#7a1599,#250325);
+    height: 100vh;
+    animation: example 4s ease infinite;
+    background-size: 200% 200%;
+}
+@keyframes example{
+     0%{
+        background-position: 0% 0%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+}
+
+
+.container{
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    background: white;
+    border-radius: 10px;
+    min-width: 450px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%,-50%);
+}
+/*ending container styles*/
+
+
+h1{
+    color: #7a1599;
+    text-transform: uppercase;
+    position: absolute;
+    top: 87%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    font-size: larger;
+    text-align: center;
+}
+
+/*starting task field and button style
+We add the styling for the tasks which we have added.
+*/
+
+#newtask{
+
+    position: relative;
+    padding: 7vh 8vh;
+}
+#newtask input{
+    width: 75%;
+    height: 45px;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: #d582ee;
+}
+#newtask button{
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #d582ee;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+}
+/*ending new task field and button style*/
+
+
+/*starting new task field style*/
+#tasks{
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+
+.task{
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+}
+.task span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.task button{
+    background-color: #d582ee;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+}
+
+/*ending new task field style*/

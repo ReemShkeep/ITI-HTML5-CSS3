@@ -9,11 +9,25 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js" defer ></script>
 
-    <title>My Music Player</title>
+    <title>Standrad form</title>
 </head>
 <body>
 
-
+    <form >
+        <label>Name:</label><br>
+        <input type="text" placeholder="Please Enter your Name" required="" ><br>
+        <label>Email:</label><br>
+        <input type="email" placeholder="Please Enter your Email" required=""><br>
+        <label>Password:</label><br>
+        <input type="password" required="" minlength="8"><br>
+        <label>Salary:</label><br>
+          <input oninput="x.value=parseInt(a.value)+150" type="range" id="a" value="100">
+          <output name="x" for="a">250</output><br>
+          <label>Age:</label><br>
+          <input type="number" required="" min="21"><br><br>
+        <button type="submit">Submit</button>
+      </form>
+      
 
     
     
