@@ -1,0 +1,126 @@
+/*  make the images in oneline */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+
+
+}
+
+
+
+/* header design */
+header {
+    background-color: #00b050;
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+}
+nav {
+    width: 100%;
+    height: 4vh;
+    background-color: #d1e5e4;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2vh ;
+}
+/*horizontal navigation bar design */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d1e5e4;
+}
+
+nav li {
+    float: left;
+} 
+
+
+
+nav li a {
+    margin: 0px 50px;
+
+    color: #ffffff ;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+}
+
+
+/* section design */
+section {
+    text-align: center;
+    background-color: #ff8b2d;
+    width: 100%;
+    float: left;
+    padding: 10px;
+    height: 43vh;
+}
+.container {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  /* border: 3px solid #348d13; */
+  width: 61vw;
+  height: 86vh;
+  /* margin: 5% 5% 5% 5%; */
+  margin: 2% 0% 0% 15%;
+  padding: 0;
+  list-style: none;
+  list-style: none;
+}
+
+.shapes {
+  /* display: inline-block; */
+  position: relative;
+  /* border: 3px solid #348d13; */
+  width: 11vw;
+  height: 74vh;
+  /* margin: 0%; */
+  padding: 0;
+  list-style: none;
+}
+.shapes li {
+  /* border: 3px solid blue; */
+  width: 89%;
+  padding: 0;
+  list-style: none;
+}
+.shapes li img {
+  width: 100%;
+}
+
+/* styyle for empty div */
+svg {
+  /* border: 3px solid #8d1313; */
+  width: 100%;
+  height: 100px;
+  background-color: #d7c9c9;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 54rem;
+  width: 65rem;
+
+  position: absolute;
+  top: 0%;
+  left: 16%;
+}
+
+
+
+
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fb3d0d;
+    color: white;
+    text-align: center;
+}

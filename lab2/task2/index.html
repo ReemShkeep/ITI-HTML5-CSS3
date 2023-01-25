@@ -1,21 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Reem Shkeep">
-    <meta name="description" content="music player ">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js" defer ></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Reem Shkeep" />
+    <meta name="description" content="music player " />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
 
-    <title>My Music Player</title>
-</head>
-<body>
+    <title>My svg shape generator</title>
+  </head>
+  <body>
+    <!--header -->
+    <header>
+      <h1>svg shape generator</h1>
+    </header>
+    <!--navigation -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- section -->
+    <section>
+      <div class="container">
+        <!-- the sidebar of the 3 buttons of shapes  -->
+        <ul class="shapes">
+          <li class="line" id="line">
+            <button>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Draw-1-black-line.svg/636px-Draw-1-black-line.svg.png?20070720192612"
+                alt=""
+              />
+            </button>
+          </li>
+          <li class="rectangle" id="rect">
+            <button>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAGFBMVEX///8AAABDQ0NgYGBAQEBHR0fw8PAQEBA1FjmHAAABdklEQVR4nO3du20EMRQEQe19pPwzlie/DeoGi6oABmyA/vv6AgAAAAAAAAAA4J6+n6/Hgtfz+1Dh81rxPFT4+nTYn9ehwsd1/bw//UUf75/repwrfB+aLt5HC09NFwefofCfKNycLhRuThcKN6cLhZvThcLN6ULh5nShcHO6ULg5XSjcnC4Ubk4XCjenC4Wb04XCzelC4eZ0oXBzulC4OV0o3JwuFG5OFwo3pwuFm9OFws3pQuHmdKFwc7pQuDldKNycLhRuThcKN6cLhZvThcLN6ULh5nShcHO6ULg5XSjcnC4Ubk4XCjenC4Wb04XCzelC4eZ0oXBzulC4OV0o3JwuFG5OFwo3pwuFm9OFws3pQuHmdKFwc7pQuDldKNycLhRuThcKN6cLhZvThcLN6ULh5nShcHO6ULg5XSjcnC4Ubk4XCjenC4Wb04XCzelC4eZ0oXBzujhbeP8blje/Q3r/W7L3vwd8/5vOAAAAAAAAAAAAfNovofQM/Y0JipEAAAAASUVORK5CYII="
+                alt=""
+              />
+            </button>
+          </li>
+          <li class="circle" id="circ">
+            <button>
+              <img
+                src="https://dictionary.cambridge.org/fr/images/thumb/circle_noun_001_02738.jpg?version=5.0.287"
+                alt=""
+              />
+            </button>
+          </li>
 
+          <!-- <li class="triangle" id="tri">
+               <button><img src="data:image/png;base64,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" alt=""></button>
+            </li> -->
+        </ul>
+        <!-- svg shape-->
+        <svg id="svg"></svg>
+      </div>
+    </section>
 
-
-    
-    
-</body>
+    <footer>
+      <p>Reem Shkeep</p>
+    </footer>
+  </body>
 </html>
