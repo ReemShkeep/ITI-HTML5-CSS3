@@ -44,26 +44,40 @@ nav li a {
 
 }
 
-nav li a:hover {
-    background-color: #d1e5e4;
-}
+/*
+Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.
 
-nav li a:active {
-    background-color: #d1e5e4;
-}
+Note: a:active MUST come after a:hover in the CSS definition in order to be effective.*/
+
+
+
 
 nav li a:visited {
-    background-color: #d1e5e4;
+    background-color: #622525;
 }
-
+/* 
 nav li a:link {
-    background-color: #d1e5e4;
+    background-color: #e3d1e5;
+} */
+
+
+
+nav li a:hover {
+    background-color: #322a69;
 }
 
+
+/* 
+nav li a:active {
+    background-color: #087066;
+}  */
+
+
+/* onclick */
 nav li a:focus {
-    background-color: #d1e5e4;
+    background-color: #12a219;
 }
-
+ 
 
 /* section design */
 section {
@@ -125,24 +139,6 @@ figcaption {
 }
 
 
-
-
-/* image in figure design */
-
-
-
-/* navigation bar fixed position 
-
-nav {
-    line-height: 30px;
-    background-color: #eeeeee;
-    height: 300px;
-    width: 100px;
-    float: left;
-    padding: 5px;
-}
-*/
-/*make fixed footer */
 footer {
     position: fixed;
     left: 0;
